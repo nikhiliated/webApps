@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mathapp</title>
+  <link rel="stylesheet" type="text/css" href="calcstyle.css">
+  <link rel="icon" type="img/png" href="favicon1.png" />
+	
+
+
+</head>
+
+<body onload="clear(Calc)" >
+<div class="background">
+<div class="upper">
+ <h2> M(APP)TH </h2>
+ <h4>| <a href="#" title="Home" > M(APP)TH </a>| <a href="comparison.html" title="Volume Comparison"> volCompara </a> |  <a href="rotation.html" title="Animations">Animations</a> | <a href="https://nikhiliated.com" title="Portfolio"> Portfolio </a> | </h4>
+</div>
+
+<div class="content">
+<div class="left">
+
+<form name="Data">
+  FIRST INPUT: <input name="Input1" type="text" value=""  ></BR>
+ 
+  SECOND INPUT: <input name="Input2" type="text" value=""  ></BR>
+
+</form>
+
+<form name="Operations">
+<tr>
+<td>
+<input type="button" name="ADD"  value="  +  " onClick="Javascript:add()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="SUB"  value="  -  " onClick="Javascript:sub()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="MUL"  value="  *  " onClick="Javascript:mul()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="DIV"  value="  /  " onClick="Javascript:div()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="MOD"  value="  %  " onClick="Javascript:mod()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="POW"  value="  ^  " onClick="Javascript:pow()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="EXP"  value="  EXP  " title="Exponential" onClick="Javascript:exp()"></br>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="LCM"  value="  LCM  " onClick="Javascript:lcm()">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="HCF"  value="  HCF  " onClick="Javascript:hcf()"></BR>
+</td>
+</tr>
+</form>
+
+
+<form name="Answer">
+  ANSWER: <input name="Input" type="text" value="0"  ></BR>
+</form>
+
+</div>
+<div class="right">
+
+<tr>
+<td>
+ <form name="Calc">
+<input name="Input" type="text" value="0"  ></BR>
+
+</form>   
+</td>    
+</tr>
+
+<form name="keypad">
+<tr>
+<td>
+<input type="button" name="one"   value="  1  " onClick="Calc.Input.value += 1">
+<input type="button" name="two"   value="  2  " onClick="Calc.Input.value += 2">
+<input type="button" name="three" value="  3  " onClick="Calc.Input.value += 3"></br>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="four"  value="  4  " onClick="Calc.Input.value += 4">
+<input type="button" name="five"  value="  5  " onClick="Calc.Input.value += 5">
+<input type="button" name="six"   value="  6  " onClick="Calc.Input.value += 6"></br>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="seven" value="  7  " onClick="Calc.Input.value +=7">
+<input type="button" name="eight" value="  8  " onClick="Calc.Input.value +=8">
+<input type="button" name="nine"  value="  9  " onClick="Calc.Input.value +=9"></br>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" name="Clear" value="  C  " title="Clear" onClick="Calc.Input.value=''">
+<input type="button" name="zero"  value="  0  " onClick="Calc.Input.value += 0">
+<input type="button" name="decimal"  value="  .  " onClick="Calc.Input.value +='.'"></br>
+</td>    
+</tr>
+
+<tr>
+<td>
+<input type="button" name="bkspc"  value="  BKSPC  " title="Backspace" onClick="Calc.Input.value=Calc.Input.value.substring(0,Calc.Input.value.length-1);"></br>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<input type="button" name="submit" value=" SUBMIT " title="Submit" onClick="
+     if (Data.Input1.value=='')
+    {
+        Data.Input1.value=Calc.Input.value;
+    }
+    else {
+        Data.Input2.value=Calc.Input.value;
+
+         };  Calc.Input.value='';" >
+    
+</td>
+</tr>
+
+</form>
+</div>
+    
+
+</div>
+
+<div class="datafield">
+<h1> USER DATA </h1>
+<p>
+<input type="button" id="swapbutton" value="Swap" onclick="Javascript:swaprow()"></input>
+<input type="number" id="first" min="1" placeholder="Serial"></input>
+~
+<input type="number" id="second" min="1" placeholder="Serial"></input>
+</p>
+ <table id="tabledata">
+        <tr id="data">
+        <th> Serial </th><th> Input 1 </th><th> Input 2 </th><th> Operation </th><th> Answer </th><th> Color </th>
+        </tr>
+        <hr />
+    </table>
+    
+
+</div>
+
+<div class="lower">
+>INSTRUCTIONS<
+<ul>
+<li>Use keypad to type values and then click SUBMIT to feed the values as first input or second, sequentially.</li>
+<li>OR you may directly feed inputs using keyboard.</li>
+<li>Once you have entered the inputs, choose the desired operation</li>
+<li>You can keep track of your operations in the USERDATA table.</li>
+<li>You have the option to swap any two rows in the table or paint any row with your favourite color.</li>
+    
+</div>
+    
+
+</div>
+
+<script src="calcscript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+    div.background {
+    width: 100%;
+    margin: 0px;
+    border: 1px solid gray;
+    line-height: 150%;
+    background-color: lightgrey;
+
+    }
+
+    div.upper {
+    background-color: #ff3333;
+    position:top;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 10px;
+
+    }
+
+    div.content {
+    left: 21%;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    color: white;
+    text-align:center;
+    line-height: 150%;
+    padding:15px;
+    background-color:#339966;
+    font-family: calibri;
+    margin-bottom: 40px;
+    display: inline-block;
+    min-height: 20em;
+    max-width: 50em;
+     max-height: 20em;
+    transition: background-color 1s, border-top-color 0.5s, box-shadow 0.5s;
+    -webkit-transition: background-color 1s, border-top-color 0.5s, box-shadow 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    div.right {
+    float: right;
+    margin: 0;
+    padding: 1em;
+    width:40%;
+    text-align: center;
+    font-size: 100%;
+    font-family: font1;
+    display: inline-block;
+    }
+
+     div.left {
+    float: left;
+    margin: 0;
+    padding: 1em;
+    width:40%;
+    text-align: center;
+    font-size: 100%;
+    font-family: font1;
+    display: inline-block;
+    }
+
+     div.bottom {
+    margin: 0;
+    padding: 1em;
+    width:100%;
+    text-align: center;
+    font-size: 100%;
+    font-family: font1;
+    display:block;
+    }
+
+    div.lower {
+    padding: 1.5em;
+    color: white;
+    clear: left;
+    text-align: center;
+    background-color: #333333;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    }
+
+    a:link{
+       color: #333333;
+       text-decoration: none;
+       font-family: Calibri Light;
+}
+     a:visited{
+    color:black;
+}
+     a:hover{
+    
+    color:white;
+   font-family: Calibri Light;
+}
+     a:active{background-color: #ff3333}
+
+    input[type=number] {
+    width: 40%;
+    padding: 7px 14px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    outline: none;
+    background-color: #cccccc;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+
+    }
+
+
+
+input[type=number]:focus {
+    background-color: white;
+    width: 43%;
+}
+
+input[type=button] {
+    padding: 7px 14px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    outline: none;
+    background-color: lightgrey;
+    
+}
+
+input[type=button]:hover {
+    background-color: white;
+    
+}
+
+#volume {
+
+	width: 43%;
+	background-color: lightgrey;
+	color: black;
+	border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+#change {
+	font-size: 2em;
+	width: 100%;
+	display: block;
+}
+
+
+
